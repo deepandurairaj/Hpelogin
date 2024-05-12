@@ -1,0 +1,80 @@
+:root{
+    --header-bg: #000000;
+    --header-txt: #dfdfdf;
+    --icon-txt: #138b77;
+}
+
+@media(max-width:993px){
+    .icons{
+        display: none;
+    }
+    nav{
+        position: relative;
+    }
+    .links{
+        position: absolute;
+        flex-direction: column;
+        top: 14vh;
+        background-color: var(--header-bg);
+        width: 100%;
+        display: none;
+    }
+    .nav-bar{
+        padding-right: 40px;
+        font-size: 20px;
+
+    }
+    #check:checked~ .links{
+        display: flex;
+    }
+
+
+    /* footer */
+    .copyR{
+        font-size: 15px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .location-logo{
+        text-align: center !important;
+        justify-content: center;
+    }
+    .privacy{
+        text-align: center;
+        font-size: 13px !important;
+    }
+    .location-logo{
+        font-size: 13px;
+    }
+    .footer-first{
+        margin-bottom: 20px !important;
+    }
+    .copyRR{
+        text-align: left;
+    }
+}
+@media(min-width:993px){
+    .nav-bar{
+        display: none;
+    }
+}
+
+@media(max-width:766px){
+
+}
+
+@media(max-width:576px){
+    .links{
+        top: 14,5vh;
+    }
+
+    h2{
+        font-size: 25px !important;
+    }
+    .user-id{
+        font-size: 15px !important;
+        font-weight: 600;
+    }
+   
+}
